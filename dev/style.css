@@ -5,34 +5,17 @@ html{
 }
 
 body{
-	width:1200px;
-	display:block;
-	margin:0 auto;
+
+}
+
+img{
+	max-width:100%;
 }
 
 a, a:visited {color:#333; text-decoration:none;}
-
-#header{
-	margin:0 auto;
-	display:block;
-	background: url("img/d8tshtmlheader.jpg");
-	width:1200px;
-	height:420px;
-	background-repeat:no-repeat;
-}
-
-#text p{
-	float: left;
-	width: 100%;
-	display: block;
-	margin-left: 147px;
-	margin-top:-80px;
-	display:none;
-	}
 	
 #dates{
 	margin: 10px auto 0;
-	width: 987px;
 	clear:both;
 	display:block;
 	margin:0 106px;
@@ -41,7 +24,6 @@ a, a:visited {color:#333; text-decoration:none;}
 #dates a{
 	float: left;
 	margin: 16px 42px 0 0;
-	width: 96px;
 	background: white;
 	text-align:center;
 }
