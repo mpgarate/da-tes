@@ -5,7 +5,7 @@ $(document).ready(function() {
 		for(var i=0; i<height; i++ ){
 			toAppend = toAppend + "<div class='row box-row'>"			
 			for(var j=0; j<width; j++ ){
-				toAppend = toAppend + "<div class='box col-lg-2 col-2'></div>"
+				toAppend = toAppend + "<div class='box hidden-sm col-lg-2 col-2'></div>"
 			}
 			toAppend = toAppend + "</div><!-- .box-row -->"
 		}
@@ -31,6 +31,7 @@ $(document).ready(function() {
 	setHeight('.boxes');
 	setPadHeight('.box');
 	setPadHeight('.player .boxes');
+	
 	$(window).resize(function(){
 		setHeight('.bc-iframe');
 		setHeight('.boxes');
@@ -72,7 +73,6 @@ $(document).ready(function() {
 		 var decColor = c + ", 80%, 40%";
 		 var newColor = "hsl(" + decColor.toString(16) + ")";
 			$(this).css("background", newColor);
-			$('html').css("background", newColor);
 			$(this).animate({background: + newColor }, 100, function(){
 				/* $(this).animate({backgroundColor: "#eee" }); */
 			});
