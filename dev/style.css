@@ -13,40 +13,35 @@ img{
 }
 
 a, a:visited {color:#333; text-decoration:none;}
-	
-#dates{
-	margin: 10px auto 0;
-	clear:both;
-	display:block;
-	margin:0 106px;
-}
 
-#dates a{
-	float: left;
-	margin: 16px 42px 0 0;
-	background: white;
-	text-align:center;
-}
-
-#dates a{}
-#dates a:hover{background:#333 !important;color:#fff;}
-
-#dates .sevenseven{
-	background:#aaa;
-}
-
-#dates .sixtwo{
-	background:#bbb;
-}
-#dates .fivesix{
-	background:#ccc;
-}
-
-#dates .ninetwo{
+.box {
 	background:#ddd;
+	height:100%;/*
+	width:12.8245%; */
+	padding:0;
+	border-bottom: 15px solid white;
+	border-right: 15px solid white;
+	float:left;
 }
-#dates .fivetwo{
-	background:#fff;
+.box:last-child{
 }
-
-#dates a#big{font-size:156px;width:950px;margin:0;padding:0;font-weight:bold;background:#f0f0f0;margin-top:26px;}
+.row .box-row{
+	height:12.8245%;/*
+	height:16.666%;*/
+	margin-top:0;
+}
+.boxes{
+	height:360px;
+	overflow:hidden;
+}
+.boxes-row .boxes{
+	margin-bottom:-180px;
+}
+.bc-col{
+	padding-right:0;
+	margin-right:15px;
+}
+.player .boxes-left{
+	padding-right:15px;
+	margin-right:-15px;
+}

@@ -1,7 +1,72 @@
 $(document).ready(function() {
-	function setWidth(selector){
+
+	/* Set the height to match the width */
+	function setHeight(selector){
 		var width = $(selector).width();
-		$('.bc-iframe').css({'height':width+'px'});
+		$(selector).css({'height':width+'px'});
 	}
-	setWidth('.bc-iframe');
+
+
+	setHeight('.boxes');
+	$(window).resize(function(){
+		setHeight('.bc-iframe');
+		setHeight('.boxes');
+	});
+
+
+	/* Insert the bandcamp widget so that we can control the callback */
+	function callIframe() {
+			var bcPlayer="<iframe id='bcPlayer' class='bc-iframe' style='border: 0; width: 100%;' src='' seamless>	<a href='http://d8ts.bandcamp.com/album/da-tes'>DA/TES by Splotch &amp; Emoticon Dream</a></iframe>";
+			var srcUrl="http://bandcamp.com/EmbeddedPlayer/album=185332851/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/";
+	    $('.bc-col').prepend(bcPlayer);
+    	$('iframe#bcPlayer').attr('src', srcUrl);
+	    $('iframe#bcPlayer').load(function() {
+				setHeight('.bc-iframe');
+	    });
+	}
+	callIframe();
+
+	$('.boxes-row .boxes').append(generateGrid(3,6));
+	$('.player .boxes').append(generateGrid(6,6));
+
+	function generateGrid(height,width){
+		var toAppend = "";
+		for(var i=0; i<height; i++ ){
+			toAppend = toAppend + "<div class='row box-row'>"			
+			for(var j=0; j<width; j++ ){
+				toAppend = toAppend + "<div class='box col-lg-2 col-2'></div>"
+			}
+			toAppend = toAppend + "</div><!-- .box-row -->"
+		}
+		return toAppend;
+	}
+
+
+/* COLOR GRID! */
+
+	var play_settings = {
+    rainbow_mode: 1,
+    grid_size: 0
+	};
+
+	if (play_settings.rainbow_mode) {
+		rainbow_mode();
+	}
+
+	function rainbow_mode() {
+		$('.box').on('mouseenter', function(){
+			var d = new Date();
+		 var s = d.getSeconds();
+		 var c = s*6;	//0-60 seconds --> 0-360 color range
+		 
+		 var decColor = c + ", 80%, 40%";
+		 var newColor = "hsl(" + decColor.toString(16) + ")";
+			$(this).css("background", newColor);
+			$('html').css("background", newColor);
+			$(this).animate({background: + newColor }, 100, function(){
+				/* $(this).animate({backgroundColor: "#eee" }); */
+			});
+		});
+	}
+
 });
