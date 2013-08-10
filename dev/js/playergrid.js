@@ -12,7 +12,7 @@ $(document).ready(function() {
 		return toAppend;
 	}
 
-	$('.boxes-row .boxes').append(generateGrid(3,6));
+	$('.boxes-row .boxes').append(generateGrid(2,6));
 	$('.player .boxes').append(generateGrid(6,6));
 
 
@@ -31,7 +31,7 @@ $(document).ready(function() {
 	setHeight('.boxes');
 	setPadHeight('.box');
 	setPadHeight('.player .boxes');
-	
+
 	$(window).resize(function(){
 		setHeight('.bc-iframe');
 		setHeight('.boxes');
@@ -78,5 +78,25 @@ $(document).ready(function() {
 			});
 		});
 	}
+
+$('.release-date a').click(function(){
+	$('#google').click();
+	$('#artlink').trigger('click');
+	console.log($('#bcPlayer').width());
+});
+$('#artlink').click(function(){
+	alert("button clicked");
+});
+
+/* Touch screen */
+/* 
+document.addEventListener('touchmove', function(event) {
+	console.log("touch event");
+    event.preventDefault();
+    var touch = event.touches[0];
+    if (element == document.elementFromPoint(touch.pageX,touch.pageY)) {
+         $(element).css('background','black');
+    }
+}, false); */
 
 });

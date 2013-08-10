@@ -1,11 +1,24 @@
+@font-face {
+    font-family: 'pt_monoregular';
+    src: url('css/fonts/ptm55ft-webfont.eot');
+    src: url('css/fonts/ptm55ft-webfont.eot?#iefix') format('embedded-opentype'),
+         url('css/fonts/ptm55ft-webfont.woff') format('woff'),
+         url('css/fonts/ptm55ft-webfont.ttf') format('truetype'),
+         url('css/fonts/ptm55ft-webfont.svg#pt_monoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 html{
-	background: #f0f0f0;
 	color:#333;
 	font-family:"Courier New", monospace;
 }
 
 body{
-
+	background: #eee;
 }
 
 img{
@@ -14,13 +27,34 @@ img{
 
 a, a:visited {color:#333; text-decoration:none;}
 
+.dates {
+	height:30px;
+}
+
+.dates a{
+	font-family:pt_monoregular;
+	text-align:center;
+	height:100%;
+}
+.dates a:hover{
+	background:#0099cc;
+	color:white;
+	text-decoration:none;
+}
+
+.dates .y-77 {background:#ccc;}
+.dates .y-62 {background:#bbb;}
+.dates .y-56 {background:#aaa;}
+.dates .y-92 {background:#999;}
+.dates .y-52 {background:#888;}
+
 .box {
-	background:#ddd;
+	background:#ccc;
 	height:100%;/*
 	width:12.8245%; */
 	padding:0;
-	border-bottom: 15px solid white;
-	border-right: 15px solid white;
+	border-bottom: 15px solid #eee;
+	border-right: 15px solid #eee;
 	float:left;
 }
 .box:last-child{
@@ -35,7 +69,7 @@ a, a:visited {color:#333; text-decoration:none;}
 	overflow:hidden;
 }
 .boxes-row .boxes{
-	margin-bottom:-15.5%;
+	margin-bottom:-21.5%; /* 15.5px is 3 rows */
 }
 .bc-col{
 	padding-right:0;
