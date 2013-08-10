@@ -80,12 +80,7 @@ $(document).ready(function() {
 	}
 
 $('.release-date a').click(function(){
-	$('#google').click();
-	$('#artlink').trigger('click');
-	console.log($('#bcPlayer').width());
-});
-$('#artlink').click(function(){
-	alert("button clicked");
+	$('.header-hide').slideToggle();
 });
 
 /* Touch screen */
