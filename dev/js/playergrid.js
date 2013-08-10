@@ -1,16 +1,41 @@
 $(document).ready(function() {
 
+	function generateGrid(height,width){
+		var toAppend = "";
+		for(var i=0; i<height; i++ ){
+			toAppend = toAppend + "<div class='row box-row'>"			
+			for(var j=0; j<width; j++ ){
+				toAppend = toAppend + "<div class='box col-lg-2 col-2'></div>"
+			}
+			toAppend = toAppend + "</div><!-- .box-row -->"
+		}
+		return toAppend;
+	}
+
+	$('.boxes-row .boxes').append(generateGrid(3,6));
+	$('.player .boxes').append(generateGrid(6,6));
+
+
 	/* Set the height to match the width */
 	function setHeight(selector){
 		var width = $(selector).width();
 		$(selector).css({'height':width+'px'});
 	}
+	function setPadHeight(selector){
+		var width = $(selector).width();
+		width = width + 15;
+		$(selector).css({'height':width+'px'});
+	}
 
 
 	setHeight('.boxes');
+	setPadHeight('.box');
+	setPadHeight('.player .boxes');
 	$(window).resize(function(){
 		setHeight('.bc-iframe');
 		setHeight('.boxes');
+		setPadHeight('.box');
+		setPadHeight('.player .boxes');
 	});
 
 
@@ -25,21 +50,6 @@ $(document).ready(function() {
 	    });
 	}
 	callIframe();
-
-	$('.boxes-row .boxes').append(generateGrid(3,6));
-	$('.player .boxes').append(generateGrid(6,6));
-
-	function generateGrid(height,width){
-		var toAppend = "";
-		for(var i=0; i<height; i++ ){
-			toAppend = toAppend + "<div class='row box-row'>"			
-			for(var j=0; j<width; j++ ){
-				toAppend = toAppend + "<div class='box col-lg-2 col-2'></div>"
-			}
-			toAppend = toAppend + "</div><!-- .box-row -->"
-		}
-		return toAppend;
-	}
 
 
 /* COLOR GRID! */
