@@ -15,6 +15,8 @@
 html{
 	color:#333;
 	font-family:"Courier New", monospace;
+	overflow: -moz-scrollbars-vertical; 
+	overflow-y: scroll;
 }
 
 body{
@@ -36,6 +38,9 @@ a, a:visited {color:#333; text-decoration:none;}
 	text-align:center;
 	height:100%;
 }
+.release-date a{
+	font-size:72px;
+}
 .dates a:hover{
 	background:#0099cc;
 	color:white;
@@ -49,7 +54,7 @@ a, a:visited {color:#333; text-decoration:none;}
 .dates .y-52 {background:#888;}
 
 .box {
-	background:#ccc;
+	background-color:#ccc;
 	height:100%;/*
 	width:12.8245%; */
 	padding:0;
@@ -64,12 +69,18 @@ a, a:visited {color:#333; text-decoration:none;}
 	height:16.666%;*/
 	margin-top:0;
 }
-.boxes{
+.box-row .boxes {
+	height:auto;
+}
+.player .boxes{
 	height:360px;
-	overflow:hidden;
 }
 .boxes-row .boxes{
-	margin-bottom:-21.5%; /* 15.5px is 3 rows */
+	/* margin-bottom:-20.4%; *//* 15.5px is 3 rows */
+}
+.boxes-row{
+	overflow:hidden;
+	margin-bottom:0;
 }
 .bc-col{
 	padding-right:0;

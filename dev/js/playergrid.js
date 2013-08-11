@@ -28,13 +28,13 @@ $(document).ready(function() {
 	}
 
 
-	setHeight('.boxes');
+	/* setHeight('.boxes'); */
 	setPadHeight('.box');
 	setPadHeight('.player .boxes');
 
 	$(window).resize(function(){
 		setHeight('.bc-iframe');
-		setHeight('.boxes');
+		/* setHeight('.boxes'); */
 		setPadHeight('.box');
 		setPadHeight('.player .boxes');
 	});
@@ -72,6 +72,7 @@ $(document).ready(function() {
 		 
 		 var decColor = c + ", 80%, 40%";
 		 var newColor = "hsl(" + decColor.toString(16) + ")";
+
 			$(this).css("background", newColor);
 			$(this).animate({background: + newColor }, 100, function(){
 				/* $(this).animate({backgroundColor: "#eee" }); */
@@ -82,6 +83,15 @@ $(document).ready(function() {
 $('.release-date a').click(function(){
 	$('.header-hide').slideToggle();
 });
+
+$('.box').click(function(){
+	if ($(this).css('background-color') != '#ccc')
+	{
+		$(this).css('background-color','#ccc');
+	}
+});
+
+$('.dates a').tooltip();
 
 /* Touch screen */
 /* 
