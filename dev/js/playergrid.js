@@ -98,7 +98,7 @@ $('.release-date a, .header').click(function(){
 		{
 			$(relaseDateLink).animate({fontSize: "20px"},300);
 		}
-		else{
+		else if (relaseDateLink.css('font-size') == '20px'){
 			$(relaseDateLink).animate({fontSize: "120px"},300);
 	}
 	$('.header-hide').slideToggle(function(){

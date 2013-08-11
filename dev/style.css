@@ -78,8 +78,7 @@ a, a:visited {color:#333; text-decoration:none;}
 
 .box {
 	background-color:#ccc;
-	height:100%;/*
-	width:12.8245%; */
+	height:100%;
 	padding:0;
 	border-bottom: 15px solid #eee;
 	border-right: 15px solid #eee;
@@ -88,8 +87,7 @@ a, a:visited {color:#333; text-decoration:none;}
 .box:last-child{
 }
 .row .box-row{
-	height:12.8245%;/*
-	height:16.666%;*/
+	height:12.8245%;
 	margin-top:0;
 }
 .box-row .boxes {
@@ -122,4 +120,27 @@ a, a:visited {color:#333; text-decoration:none;}
 }
 .addthis_counter.addthis_pill_style a.addthis_button_expanded{
 	width: 38px !important;
+}
+
+@media(max-width: 768px) {
+	.release-date a{
+		margin-top:20px;
+		font-size:40px;
+	}
+	.release-date{
+		margin-right:-15px;
+	}
+	.container{
+		margin-right:15px;
+	}
+	.dates{
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+	.dates .date-holder{
+		height:40px;
+	}
+	.dates a{
+		padding-top:10px;
+	}
 }
