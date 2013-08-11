@@ -27,7 +27,7 @@
       <?php include 'dates.php'; ?>
 		</div><!-- .header-hide -->
 			<div class="row release-date">
-				<a class="col-lg-12 btn">08-14-13</a>
+				<a class="col-12 col-lg-12 btn">08-14-13</a>
 			</div>
 			<div class="row boxes-row">
 				<div class="boxes hidden-sm col-sm-4 col-lg-4 boxes-left"></div>
@@ -52,7 +52,22 @@
 				<div class="hidden-sm boxes col-lg-4 col-sm-4 boxes-left"></div>
 			</div>
 
+<div class="row social-row">
+	<div class="col-4 col-lg-offset-5 ">
+		<!-- AddThis Button BEGIN -->
+		<div class="addthis_toolbox addthis_default_style ">
+		<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+		<a class="addthis_button_tweet"></a>
+		</div>
+		<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5202e0eb332120df"></script>
+		<!-- AddThis Button END -->
+	</div>
+</div>
+
     </div> <!-- /container -->
+
+
 
     <!-- JavaScript plugins (requires jQuery) -->
     <script src="http://code.jquery.com/jquery.js"></script>

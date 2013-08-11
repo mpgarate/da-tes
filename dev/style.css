@@ -14,7 +14,7 @@
 
 html{
 	color:#333;
-	font-family:"Courier New", monospace;
+	font-family:pt_monoregular, monospace;
 	overflow: -moz-scrollbars-vertical; 
 	overflow-y: scroll;
 }
@@ -29,35 +29,52 @@ img{
 
 a, a:visited {color:#333; text-decoration:none;}
 
+.header{
+	margin-bottom:-10px;
+	margin-top: -2%;
+}
 .dates {
 	height:30px;
+	margin-bottom:2px;
 }
 
 .dates .date-holder {
-	padding: 0 4%;
+	padding: 0 3%;
 }
 
 .dates a{
-	font-family:pt_monoregular;
+	font-family:pt_monoregular, monospace;
 	text-align:center;
 	height:100%;
 	display:block;
 	margin:0 auto;
-}
-.release-date a{
-	font-size:72px;
+	cursor:default;
 }
 .dates .date-holder a:hover{
-	background:#0099cc;
+	background:#66cc00;
 	color:white;
 	text-decoration:none;
 }
+.release-date{
+	margin-top:13px;
+	margin-bottom: 15px;
+	margin-right: 0;
+}
+.release-date a{
+	font-size:120px;
+	font-family:pt_monoregular, monospace;
+	background:#ddd;
+}
+.release-date a:hover{
+	background:#0099cc;
+	color:white;
+}
 
-.dates .y-77 a{background:#ccc;}
-.dates .y-62 a{background:#bbb;}
-.dates .y-56 a{background:#aaa;}
-.dates .y-92 a{background:#999;}
-.dates .y-52 a{background:#888;}
+.dates .y-77 a{background:#fff;}
+.dates .y-62 a{background:#ddd;}
+.dates .y-56 a{background:#ccc;}
+.dates .y-92 a{background:#bbb;}
+.dates .y-52 a{background:#aaa;}
 
 .box {
 	background-color:#ccc;
@@ -78,6 +95,9 @@ a, a:visited {color:#333; text-decoration:none;}
 .box-row .boxes {
 	height:auto;
 }
+.player{
+	margin-bottom:15px;
+}
 .player .boxes{
 	height:360px;
 }
@@ -95,4 +115,11 @@ a, a:visited {color:#333; text-decoration:none;}
 .player .boxes-left{
 	padding-right:15px;
 	margin-right:-15px;
+}
+
+.social-row{
+	margin-bottom:0;
+}
+.addthis_counter.addthis_pill_style a.addthis_button_expanded{
+	width: 38px !important;
 }
