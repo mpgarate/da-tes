@@ -4,8 +4,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="The official release website for the DA/TES by Splotch and Emoticon Dream." />
+		<meta name="description" content="The official release website for DA/TES by Splotch and Emoticon Dream." />
 		<meta name="keywords" content="DA/TES daytes dates d8ts da8s collin peterson michael garate emoticon dream splotch"/>
+		<meta property="og:image" content="img/d8tshtmlheader.jpg" />
 		<title>DA/TES</title>
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
