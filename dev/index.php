@@ -24,41 +24,7 @@
       <div class="row header">
         <img src="img/d8tshtmlheader.jpg" class="img-responsive"/>
       </div>
-			<div class="row dates dates-1">
-				<a href='#'
-					data-toggle="tooltip"
-					title="first tooltip" 
-					class='y-77 col-12 col-sm-2 col-lg-2'>08-12-77</a>
-				<a href='#' class='y-62 col-12 col-sm-2 col-lg-2'>12-31-62</a>
-				<a href='#' class='y-56 col-12 col-sm-2 col-lg-2'>05-06-56</a>
-				<a href='#' class='y-92 col-12 col-sm-2 col-lg-2'>01-10-92</a>
-				<a href='#' class='y-52 col-12 col-sm-2 col-lg-2'>11-06-52</a>
-				<a href='#' class='y-77 col-12 col-sm-2 col-lg-2'>08-12-77</a>
-			</div> <!-- .row .dates-1 -->
-			<div class="row dates dates-2">
-				<a href='#' class='y-62 col-12 col-sm-2 col-lg-2'>12-31-62</a>
-				<a href='#' class='y-56 col-12 col-sm-2 col-lg-2'>05-06-56</a>
-				<a href='#' class='y-92 col-12 col-sm-2 col-lg-2'>01-10-92</a>
-				<a href='#' class='y-52 col-12 col-sm-2 col-lg-2'>11-06-52</a>
-				<a href='#' class='y-77 col-12 col-sm-2 col-lg-2'>08-12-77</a>
-				<a href='#' class='y-62 col-12 col-sm-2 col-lg-2'>12-31-62</a>
-			</div> <!-- .row .dates-2 -->
-			<div class="row dates dates-3">
-				<a href='#' class='y-92 col-12 col-sm-2 col-lg-2'>01-10-92</a>
-				<a href='#' class='y-52 col-12 col-sm-2 col-lg-2'>11-06-52</a>
-				<a href='#' class='y-77 col-12 col-sm-2 col-lg-2'>08-12-77</a>
-				<a href='#' class='y-62 col-12 col-sm-2 col-lg-2'>12-31-62</a>
-				<a href='#' class='y-56 col-12 col-sm-2 col-lg-2'>05-06-56</a>
-				<a href='#' class='y-92 col-12 col-sm-2 col-lg-2'>01-10-92</a>
-			</div> <!-- .row .dates-3 -->
-			<div class="row dates dates-4">
-				<a href='#' class='y-52 col-12 col-sm-2 col-lg-2'>11-06-52</a>
-				<a href='#' class='y-77 col-12 col-sm-2 col-lg-2'>08-12-77</a>
-				<a href='#' class='y-62 col-12 col-sm-2 col-lg-2'>12-31-62</a>
-				<a href='#' class='y-56 col-12 col-sm-2 col-lg-2'>05-06-56</a>
-				<a href='#' class='y-92 col-12 col-sm-2 col-lg-2'>01-10-92</a>
-				<a href='#' class='y-52 col-12 col-sm-2 col-lg-2'>11-06-52</a>
-			</div> <!-- .row .dates-4 -->
+      <?php include 'dates.php'; ?>
 		</div><!-- .header-hide -->
 			<div class="row release-date">
 				<a class="col-lg-12 btn">08-14-13</a>

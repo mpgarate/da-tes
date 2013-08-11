@@ -15,7 +15,6 @@ $(document).ready(function() {
 	$('.boxes-row .boxes').append(generateGrid(2,6));
 	$('.player .boxes').append(generateGrid(6,6));
 
-
 	/* Set the height to match the width */
 	function setHeight(selector){
 		var width = $(selector).width();
@@ -91,8 +90,8 @@ $('.box').click(function(){
 	}
 });
 
-$('.dates a').tooltip();
 
+$('.dates a').popover({trigger:'hover'});
 /* Touch screen */
 /* 
 document.addEventListener('touchmove', function(event) {

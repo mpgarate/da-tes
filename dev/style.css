@@ -33,25 +33,31 @@ a, a:visited {color:#333; text-decoration:none;}
 	height:30px;
 }
 
+.dates .date-holder {
+	padding: 0 4%;
+}
+
 .dates a{
 	font-family:pt_monoregular;
 	text-align:center;
 	height:100%;
+	display:block;
+	margin:0 auto;
 }
 .release-date a{
 	font-size:72px;
 }
-.dates a:hover{
+.dates .date-holder a:hover{
 	background:#0099cc;
 	color:white;
 	text-decoration:none;
 }
 
-.dates .y-77 {background:#ccc;}
-.dates .y-62 {background:#bbb;}
-.dates .y-56 {background:#aaa;}
-.dates .y-92 {background:#999;}
-.dates .y-52 {background:#888;}
+.dates .y-77 a{background:#ccc;}
+.dates .y-62 a{background:#bbb;}
+.dates .y-56 a{background:#aaa;}
+.dates .y-92 a{background:#999;}
+.dates .y-52 a{background:#888;}
 
 .box {
 	background-color:#ccc;
