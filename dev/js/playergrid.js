@@ -83,8 +83,8 @@ $(document).ready(function() {
 		 
 		 var decColor = c + ", 80%, 40%";
 		 var newColor = "hsl(" + decColor.toString(16) + ")";
+		 /* var newColor = Color(jQuery.Color(oldColor)).toRgbaString(); */
 		 	$(this).data("color",c);
-		 	console.log(jQuery.data(this, "color"));
 			$(this).css("background", newColor);
 			$(this).animate({background: + newColor }, 100, function(){
 				/* $(this).animate({backgroundColor: "#eee" }); */
@@ -114,5 +114,23 @@ $('.box').click(function(){
 
 
 $('.dates a').popover({trigger:'hover'});
+
+/* Touch screen support */
+
+/*
+$('.box-row .box').live("touchstart",function(e){
+    var $link_id = $(this).attr('id');
+    if ($(this).parent().data('clicked') == $link_id) {
+        // element has been tapped (hovered), reset 'clicked' data flag on parent element and return true (activating the link)
+        $(this).parent().data('clicked', null);
+        return true;
+    } else {
+        $(this).trigger("mouseenter").siblings().trigger("mouseout"); //triggers the hover state on the tapped link (because preventDefault(); breaks this) and untriggers the hover state for all other links in the container.
+        // element has not been tapped (hovered) yet, set 'clicked' data flag on parent element to id of clicked link, and prevent click
+        e.preventDefault(); // return false; on the end of this else statement would do the same
+        $(this).parent().data('clicked', $link_id); //set this link's ID as the last tapped link ('clicked')
+    }
+});
+*/
 
 });
