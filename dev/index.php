@@ -55,7 +55,7 @@
 			</div>
 
 			<div class="row social-row">
-				<div class="col-4 col-lg-offset-5 ">
+				<div class="col-4 col-lg-offset-5 col-sm-offset-4 ">
 					<!-- AddThis Button BEGIN -->
 					<div class="addthis_toolbox addthis_default_style ">
 					<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
